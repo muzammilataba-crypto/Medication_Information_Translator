@@ -1,23 +1,23 @@
+
 class Medication:
     def __init__(
-            self,
-            name'
-            uses = "Information Unavailable",
-            dosage = "Information unavailable",
-            side_effects = "Information Unavailable",
-            Warnings = "Information Unavailable",
-            recalls = "Information unavailable"
-            ):
+        self,
+        name,
+        uses="Information Unavailable",
+        dosage="Information Unavailable",
+        side_effects="Information Unavailable",
+        warnings="Information Unavailable",
+        recalls="Information Unavailable"
+    ):
 
-        
         self.name = name
-        self.uses = self.uses
-        self.dosage = self.dosage
-        self.side_effects = self.side_effects
-        self.warnings = Warning
-        self.recalls = self.recalls
-        
-def get_information(self):
+        self.uses = uses
+        self.dosage = dosage
+        self.side_effects = side_effects
+        self.warnings = warnings
+        self.recalls = recalls
+
+    def get_information(self):
 
         return {
             "Medication Name": self.name,
@@ -33,6 +33,5 @@ def get_information(self):
         information = self.get_information()
 
         for category, details in information.items():
-
             print(f"\n{category}:")
             print(details)
